@@ -16,8 +16,7 @@
         </ul>
     @endif
 
-    <form action="{{ route('matakuliah.store') }}" method="POST">
-        @csrf
+    <form action="{{ route('matakuliah.store') }}" method="POST" novalidate>        @csrf
 
         <label>Kode Mata Kuliah:</label>
         <input type="text" name="kode_matakuliah" maxlength="20"
